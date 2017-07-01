@@ -34,8 +34,6 @@ $(function() {
                 });
             });
 
-
-
         /* has name defined
             - test loops through allFeeds and verifies name is defined, is string, not empty.
          */
@@ -110,6 +108,7 @@ $(function() {
             });
 
         });
+
         /* content changes
                    - test ensures a new feeds is loaded by loadfeed function and that content actually changes.
                    - test runs loadFeed saves first Elements.href (URL) into variable
