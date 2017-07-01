@@ -43,7 +43,7 @@ http://dsenze-feedreader.azurewebsites.net/
       test ensures atleast a single .entry element exist after loadfeed() function.
       test verifies no changes to index.html are made to faulty success this test.
 ##### New Feed Selection #####
-  ###### - content changes: ######
+  ###### content changes: ######
        test ensures a new feeds is loaded by loadfeed function and that content actually changes.
        test runs loadFeed saves first Elements.href (URL) into variable
        test run loadFeed again with new input, saves first elements.href (URL) into variable.
