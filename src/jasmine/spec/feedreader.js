@@ -53,7 +53,7 @@ $(function() {
     describe('The Menu', function() {
         var menu_icon = $('.menu-icon-link');
 
-        /* has name defined
+        /* Menu hidden by default
             - test ensures menu element is hidden by default. And verify this by check if body has menu-hidden class assigned.
         */
         it('Menu hidden by default', function() {
@@ -65,7 +65,7 @@ $(function() {
             - test ensures the menu changes visibility when the menu icon is clicked. 
             - test verifiy this by check if body has menu-hidden class assigned.
         */
-        it('menu changes visibility ', function() {
+        it('menu changes visibility', function() {
             // click on button
             menu_icon.click();
             // expect .menu-hidden class to disapear;
