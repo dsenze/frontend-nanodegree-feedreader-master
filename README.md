@@ -25,25 +25,25 @@ http://dsenze-feedreader.azurewebsites.net/
 
 ## New tests added project
 
-##### RSS Feeds #####
- ###### are defined: ######
+#### RSS Feeds ####
+ ###### TEST: are defined ######
       test if allFeed variable is defined
- ###### has valid URLs: ######
+ ###### TEST: has valid URLs: ######
       test loops through allFeeds and verifies URL is defined, not empty and contains HTTP/HTTPS
- ###### has name defined: ######
+ ###### TEST: has name defined: ######
       test loops through allFeeds and verifies name is defined, is string, not empty.
-##### The menu #####
- ###### menu hidden by default: ######
+#### The menu ####
+ ###### TEST: menu hidden by default: ######
       test ensures menu element is hidden by default. And verify this by check if body has menu-hidden class assigned.
- ###### menu changes visibility: ######
+ ###### TEST: menu changes visibility: ######
       test ensures the menu changes visibility when the menu icon is clicked. 
       test verifiy this by check if body has menu-hidden class assigned.
-##### Initial Entries #####
-  ###### at least a single .entry element exist: ######
+#### Initial Entries ####
+  ###### TEST: at least a single .entry element exist: ######
       test ensures atleast a single .entry element exist after loadfeed() function.
       test verifies no changes to index.html are made to faulty success this test.
-##### New Feed Selection #####
-  ###### content changes: ######
+#### New Feed Selection ####
+  ###### TEST: content changes: ######
        test ensures a new feeds is loaded by loadfeed function and that content actually changes.
        test runs loadFeed saves first Elements.href (URL) into variable
        test run loadFeed again with new input, saves first elements.href (URL) into variable.
