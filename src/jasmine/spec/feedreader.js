@@ -34,6 +34,8 @@ $(function() {
                 });
             });
 
+
+
         /* has name defined
             - test loops through allFeeds and verifies name is defined, is string, not empty.
          */
@@ -51,7 +53,7 @@ $(function() {
     describe('The Menu', function() {
         var menu_icon = $('.menu-icon-link');
 
-        /* Menu hidden by default
+        /* has name defined
             - test ensures menu element is hidden by default. And verify this by check if body has menu-hidden class assigned.
         */
         it('Menu hidden by default', function() {
@@ -63,7 +65,7 @@ $(function() {
             - test ensures the menu changes visibility when the menu icon is clicked. 
             - test verifiy this by check if body has menu-hidden class assigned.
         */
-        it('menu changes visibility', function() {
+        it('menu changes visibility ', function() {
             // click on button
             menu_icon.click();
             // expect .menu-hidden class to disapear;
@@ -108,7 +110,6 @@ $(function() {
             });
 
         });
-
         /* content changes
                    - test ensures a new feeds is loaded by loadfeed function and that content actually changes.
                    - test runs loadFeed saves first Elements.href (URL) into variable
