@@ -78,7 +78,7 @@ $(function() {
     });
 
     describe('Initial Entries', function() {
-        var entryList = $(".entry-link");
+        var entryList = $('.feed .entry').length;
         beforeEach(function(done) {
             loadFeed(0, function() {
                 done();
@@ -91,8 +91,8 @@ $(function() {
                    - test verifies no changes to index.html are made to faulty success this test.
         */
         it('at least a single .entry element exist', function(done) {
-            expect(entryList.length).toBe(0);
-            expect($(".entry-link").length).toBeGreaterThan(0);
+            expect(entryList).toBe(0);
+            expect($('.feed .entry').length).toBeGreaterThan(0);
             done();
         });
     });
